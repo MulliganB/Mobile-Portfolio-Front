@@ -280,11 +280,19 @@ div.education div.control div.year3 {
 div.skills {
   margin-top: 15%;
   padding-top: 7%;
-  height: 2050px;
+  height: 1800px;
   width: 100%;
   background: #e5e5e5;
   color: #191919;
   font-family: 'Titillium Web', sans-serif;
+}
+
+div.skills h4 {
+  font-size: 50px;
+  margin-left: 10%;
+  margin-right: 25%;
+  margin-top: 2.5%;
+  margin-bottom: 5px;
 }
 
 div.skills h1 {
@@ -299,34 +307,27 @@ div.skills h1 {
   width: 80%;
 }
 
-div.skills h4 {
-  font-size: 80px;
-  margin-left: 10%;
-  margin-bottom: 5px;
-}
-
-div.skills h4 h4:first-child {
-  margin-top: 10px;
-}
-
 div.skills div.progress {
   width: 80%;
-  height: 3%;
+  height: 7%;
   margin-left: 10%;
   margin-right: 7%;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   background: #e5e5e5;
   box-shadow: -1px 1px 5px 1px #cccccc;
   border-radius: 5px;
 }
 
 div.skills div.progress div.progress-bar {
-  background: #191919;
+  background: linear-gradient(to right, #7f7f7f 0%, #191919 100%);
   border-radius: 10px;
+  height: 100%;
+  z-index: 2;
 }
 
 div.skills div.progress div.progress-bar span.sr-only {
-  width: 80%;
+  width: 50%;
+  font-size: 80px;
 }
 
 div.portfolio {
