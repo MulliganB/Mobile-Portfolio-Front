@@ -15,3 +15,15 @@ function closeNav() {
   document.getElementById("navSection").style.height = "auto";
   document.body.style.overflow = "scroll";
 }
+$(document).ready(function(){
+  $(window).scroll(function() {
+		$('#ani').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+400) {
+				$(this).addClass("slideUp");
+			}
+		});
+	});
+});
