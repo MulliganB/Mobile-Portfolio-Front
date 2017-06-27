@@ -1,0 +1,624 @@
+body {
+  overflow-x: hidden;
+  background-color: #191919;
+  color: #e5e5e5;
+}
+
+div.bg {
+  background-color: #191919;
+  color: #e5e5e5;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+  -webkit-border-radius: 6px;
+}
+
+div.navsection {
+  float: left;
+  margin-left: 7px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+}
+
+div.navsection span {
+  margin-top: 50px;
+  color: #4c4c4c;
+}
+
+div.navsection span:hover {
+  color: #666666;
+}
+
+div.navsection span:active {
+  color: #7f7f7f;
+}
+
+div.logo {
+  border: solid 0.5px #191919;
+  margin-top: 0;
+  height: 1865px;
+  width: 100%;
+  box-shadow: -5px 6px 5px 0px rgba(0, 0, 0, 0.75);
+  background-color: #e5e5e5;
+  color: #191919;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Titillium Web', sans-serif;
+  z-index: 1;
+}
+
+div.logo img {
+  display: block;
+  margin-top: 4%;
+  margin-left: 12%;
+  margin-right: 20%;
+  opacity: 0.6;
+  max-width: 50%;
+  height: 25%;
+  border-radius: 15px;
+  z-index: 2;
+}
+
+div.logo div.text {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 15%;
+  z-index: 2;
+}
+
+div.logo div.text H1 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 80px;
+  line-height: 120px;
+}
+
+div.logo div.text H2 {
+  margin-top: 15%;
+  font-size: 60px;
+  line-height: 80px;
+  text-align: center;
+}
+
+.center {
+  margin-top: 8%;
+  margin-left: 40%;
+  margin-right: 50%;
+  font-size: 200px;
+  z-index: 2;
+}
+
+div.profile {
+  margin-top: 1%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  width: 100%;
+  height: 1890px;
+  background: #191919;
+  color: #e5e5e5;
+  opacity: 0.8;
+}
+
+div.profile h1 {
+  margin-top: 5%;
+  margin-bottom: 10%;
+  margin-left: 7%;
+  margin-right: 7%;
+  font-size: 130px;
+  font-family: 'Titillium Web', sans-serif;
+  line-height: 150px;
+  border-bottom: solid 1px #cccccc;
+  height: 350px;
+  width: 86%;
+  text-align: center;
+}
+
+div.profile h4 {
+  margin-left: 10%;
+  font-size: 130px;
+  font-family: 'Titillium Web', sans-serif;
+  line-height: 125px;
+  width: 80%;
+  text-align: center;
+}
+
+div.profile h5 {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 4%;
+  font-size: 60px;
+  font-family: 'Titillium Web', sans-serif;
+  line-height: 125px;
+  width: 80%;
+  text-align: center;
+}
+
+div.profile p {
+  margin-top: 7%;
+  margin-left: 2%;
+  margin-right: 2%;
+  text-align: center;
+  font-size: 50px;
+  line-height: 90px;
+}
+
+div.profile hr {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 10%;
+}
+
+hr.style18 {
+  height: 30px;
+  border-style: solid;
+  border-color: #8c8b8b;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+
+hr.style18:before {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: #8c8b8b;
+  border-width: 0 0 3px 0;
+  border-radius: 20px;
+}
+
+div.education {
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 2000px;
+  width: 100%;
+  background: #191919;
+  color: #e5e5e5;
+  opacity: 0.9;
+}
+
+div.education h1 {
+  margin-left: 25px;
+  padding-top: 4%;
+  font-size: 90px;
+  font-family: 'Titillium Web', sans-serif;
+  border-bottom: solid 1px #cccccc;
+  height: 140px;
+  width: 80%;
+}
+
+div.education h3 {
+  margin-left: 25px;
+  font-size: 60px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+div.education h5 {
+  margin-left: 25px;
+  font-size: 50px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+div.education div.control {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+div.education div.control h4 {
+  margin-left: 2%;
+  padding-top: 5px;
+  border-bottom: solid 3px #cccccc;
+  width: 92%;
+  font-size: 50px;
+  line-height: 55px;
+}
+
+div.education div.control p {
+  margin-left: 1.75%;
+  margin-right: 1.75%;
+  font-size: 40px;
+}
+
+div.education div.control div.overview {
+  background: #e5e5e5;
+  height: 375px;
+  width: 95%;
+  border-radius: 5px;
+  box-shadow: -5px 6px 6px 1px #000000;
+  margin-bottom: 3%;
+  color: #191919;
+}
+
+div.education div.control div.overview p {
+  padding-top: 1%;
+  font-size: 40px;
+}
+
+div.education div.control div.year1 {
+  background: #e5e5e5;
+  height: 395px;
+  width: 95%;
+  border-radius: 5px;
+  box-shadow: -5px 6px 6px 1px #000000;
+  margin-bottom: 3%;
+  color: #191919;
+}
+
+div.education div.control div.year2 {
+  background: #e5e5e5;
+  height: 395px;
+  width: 95%;
+  border-radius: 5px;
+  box-shadow: -5px 6px 6px 1px #000000;
+  margin-bottom: 3%;
+  color: #191919;
+}
+
+div.education div.control div.year3 {
+  background: #e5e5e5;
+  height: 480px;
+  width: 95%;
+  border-radius: 5px;
+  box-shadow: -5px 6px 6px 1px #000000;
+  margin-bottom: 3%;
+  color: #191919;
+}
+
+div.skills {
+  margin-top: 15%;
+  padding-top: 7%;
+  height: 2050px;
+  width: 100%;
+  background: #e5e5e5;
+  color: #191919;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+div.skills h1 {
+  margin-left: 10%;
+  margin-top: 4%;
+  margin-bottom: 2%;
+  font-size: 90px;
+  font-family: 'Titillium Web', sans-serif;
+  line-height: 30px;
+  border-bottom: solid 3px #cccccc;
+  height: 80px;
+  width: 80%;
+}
+
+div.skills h4 {
+  font-size: 80px;
+  margin-left: 10%;
+  margin-bottom: 5px;
+}
+
+div.skills h4 h4:first-child {
+  margin-top: 10px;
+}
+
+div.skills div.progress {
+  width: 80%;
+  height: 3%;
+  margin-left: 10%;
+  margin-right: 7%;
+  margin-bottom: 10%;
+  background: #e5e5e5;
+  box-shadow: -1px 1px 5px 1px #cccccc;
+  border-radius: 5px;
+}
+
+div.skills div.progress div.progress-bar {
+  background: #191919;
+  border-radius: 10px;
+}
+
+div.skills div.progress div.progress-bar span.sr-only {
+  width: 80%;
+}
+
+div.portfolio {
+  margin-top: 7%;
+  margin-bottom: 5%;
+  margin-left: 7%;
+  height: 2250px;
+  width: 100%;
+  background: #191919;
+  color: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  opacity: 0.8;
+}
+
+div.portfolio div.work {
+  margin-left: 2%;
+  margin-right: 6%;
+  width: 80%;
+  border-bottom: solid 3px #cccccc;
+}
+
+div.portfolio div.work img {
+  margin-right: 2%;
+  margin-left: 2%;
+  margin-bottom: 5%;
+  width: 45%;
+  height: 15%;
+}
+
+div.portfolio div.work img:hover {
+  transform: scale(1.35);
+}
+
+div.portfolio div.label {
+  margin-top: 2.5%;
+  margin-bottom: 4%;
+  margin-left: 2%;
+  margin-right: 5%;
+  height: 250px;
+  width: 80%;
+  word-wrap: break-word;
+  line-height: 90px;
+  text-align: center;
+  border-top: solid 3px #cccccc;
+  border-bottom: solid 3px #cccccc;
+}
+
+div.portfolio div.label h1 {
+  font-size: 80px;
+  font-family: 'Titillium Web', sans-serif;
+  line-height: 10px;
+  margin-bottom: 2%;
+}
+
+div.portfolio div.label h2 {
+  font-size: 80px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+div.portfolio div.label p {
+  font-size: 48px;
+  font-family: 'Titillium Web', sans-serif;
+  line-height: 120px;
+  margin-top: 5%;
+}
+
+div.contact {
+  margin-top: 2%;
+  height: 1600px;
+  width: 100%;
+  background: #e5e5e5;
+  color: #191919;
+  box-shadow: -1px 1px 5px 1px #4c4c4c;
+  display: flex;
+  flex-direction: column;
+  opacity: 0.7;
+}
+
+div.contact div.call {
+  width: 90%;
+  height: 300px;
+  border-bottom: solid 5px #cccccc;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+  padding-bottom: 5%;
+  line-height: 100px;
+}
+
+div.contact div.call h1 {
+  margin-left: 2%;
+  font-size: 120px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+div.contact div.call p {
+  margin-left: 2%;
+  font-size: 80px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+div.contact div.form {
+  width: 100%;
+  height: 2500px;
+  margin-left: 5%;
+  margin-right: 2.5%;
+  margin-top: 15px;
+}
+
+div.contact div.form div.name {
+  margin-top: 5px;
+  height: 200px;
+  font-size: 60px;
+}
+
+div.contact div.form div.name input {
+  float: left;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
+  text-indent: 7px;
+  border: none;
+  border-radius: 5px;
+  resize: none;
+  box-shadow: -4px 6px 5px 0px #cccccc;
+}
+
+div.contact div.form div.name input.first {
+  height: 50%;
+  width: 90%;
+}
+
+div.contact div.form div.name input.last {
+  height: 50%;
+  width: 90%;
+}
+
+div.contact div.form div.message {
+  margin-top: 5px;
+  height: 200px;
+  font-size: 60px;
+}
+
+div.contact div.form div.message textarea {
+  float: left;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
+  text-indent: 7px;
+  border: none;
+  border-radius: 5px;
+  resize: none;
+  box-shadow: -4px 6px 5px 0px #cccccc;
+  height: 250%;
+  width: 90%;
+}
+
+div.contact div.form div.subject {
+  margin-top: 5px;
+  height: 200px;
+  font-size: 60px;
+}
+
+div.contact div.form div.subject input {
+  float: left;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
+  text-indent: 7px;
+  border: none;
+  border-radius: 5px;
+  resize: none;
+  box-shadow: -4px 6px 5px 0px #cccccc;
+  height: 50%;
+  width: 90%;
+}
+
+div.contact div.form div.action {
+  margin-top: 70px;
+  width: 90%;
+}
+
+div.contact div.form div.action input {
+  width: 100%;
+  height: 9%;
+  font-size: 50px;
+  border-radius: 5px;
+  background: #191919;
+  color: #e5e5e5;
+  border: none;
+}
+
+div.contact div.form div.action input:hover {
+  background: #323232;
+}
+
+div.social {
+  margin-top: 5%;
+  height: 300px;
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+}
+
+div.social i {
+  margin-right: 5%;
+  color: #4c4c4c;
+}
+
+div.social i:hover {
+  color: #666666;
+}
+
+div.social i:active {
+  color: #7f7f7f;
+}
+
+div.social div.socialCall {
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+div.social div.socialCall H1 {
+  font-size: 80px;
+}
+
+div.social div.socialCall H2 {
+  font-size: 45px;
+}
+
+div.social div.btns {
+  margin-left: 3%;
+  margin-top: 3%;
+  font-size: 70px;
+}
+
+.sidenav {
+  display: none;
+  height: 100%;
+  width: 80%;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #191919;
+  overflow-x: hidden;
+  padding-top: 30px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  color: #818181;
+  display: flex;
+  flex-direction: column;
+  font-size: 60px;
+  text-align: center;
+  height: 10%;
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+  z-index: 3;
+}
+
+.sidenav a:hover, .offcanvas a:focus {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: relative;
+  top: 0;
+  right: 25px;
+  font-size: 80px;
+  margin-left: 15%;
+  margin-bottom: 5%;
+  text-align: right;
+}
+
+.openBtn {
+  visibility: visible;
+  margin-left: 12%;
+  margin-top: 5%;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
