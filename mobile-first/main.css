@@ -181,7 +181,7 @@ div.education {
   margin-left: 5%;
   margin-right: 5%;
   height: 2000px;
-  width: 100%;
+  width: 95%;
   background: #191919;
   color: #e5e5e5;
   opacity: 0.9;
@@ -332,9 +332,9 @@ div.skills div.progress div.progress-bar span.sr-only {
 div.portfolio {
   margin-top: 7%;
   margin-bottom: 5%;
-  margin-left: 7%;
+  margin-left: 10%;
   height: 2250px;
-  width: 100%;
+  width: 90%;
   background: #191919;
   color: #e5e5e5;
   display: flex;
