@@ -26,4 +26,64 @@ $(document).ready(function(){
 			}
 		});
 	});
+  $(window).scroll(function() {
+		$('#slide').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+1400) {
+				$(this).addClass("stretchRight");
+			}
+		});
+	});
+  $(window).scroll(function() {
+		$('#slide1').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+1375) {
+				$(this).addClass("stretchRight");
+			}
+		});
+	});
+  $(window).scroll(function() {
+		$('#slide2').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+1350) {
+				$(this).addClass("stretchRight");
+			}
+		});
+	});
+  $(window).scroll(function() {
+		$('#slide3').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+1325) {
+				$(this).addClass("stretchRight");
+			}
+		});
+	});
+  $(window).scroll(function() {
+		$('#slide4').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+1300) {
+				$(this).addClass("stretchRight");
+			}
+		});
+	});
+  $(window).scroll(function() {
+		$('#slide5').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+1275) {
+				$(this).addClass("stretchRight");
+			}
+		});
+	});
 });
