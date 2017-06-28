@@ -6,6 +6,15 @@
 .slide
   animation-duration: 3s
   animation-name: slide
+.letterpress
+  color: #2f4050
+  font-family: Tahoma, Helvetica, Arial, sans-serif
+  font-size: 70px
+  text-align: left
+  text-shadow: 0 1px 1px #fff
+.embossed
+  font-family: 'Permanent Marker', cursive
+  //text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9)
 body
   overflow-x: hidden
   background-color: #191919
@@ -72,14 +81,15 @@ div.logo
   margin-top: 0
   height: 1865px
   width: 100%
-  box-shadow: -5px 6px 5px 0px rgba(0,0,0,0.75)
+  box-shadow: inset 0px -2px 35px 0px rgba(76,76,76,1)
   background-color: #e5e5e5
   color: #191919
   overflow: hidden
   display: flex
   flex-direction: column
-  font-family: 'Titillium Web', sans-serif
   z-index: 1
+  border-bottom-right-radius: 75px
+  border-bottom-left-radius: 75px
   img
     display: block
     margin-top: 4%
@@ -94,17 +104,18 @@ div.logo
     margin-left: 5%
     margin-right: 5%
     margin-top: 15%
-    z-index: 2
+    z-index: 1
     H1
-      font-weight: bold
+      //font-weight: bold
       text-align: center
       font-size: 80px
-      line-height: 120px
+      line-height: 140px
     H2
       margin-top: 15%
       font-size: 60px
       line-height: 80px
       text-align: center
+      font-family: 'Oswald', sans-serif
 .center
   margin-top: 8%
   margin-left: 40%
@@ -259,11 +270,14 @@ div.education
 div.skills
   margin-top: 15%
   padding-top: 7%
-  height: 1800px
+  height: 1870px
   width: 100%
   background: #e5e5e5
+  border: solid 1px #191919
+  border-radius: 75px
+  box-shadow: inset 0px 0px 35px 0px rgba(76,76,76,1)
   color: #191919
-  font-family: 'Titillium Web', sans-serif
+  //font-family: 'Titillium Web', sans-serif
   h4
     font-size: 50px
     margin-left: 10%
@@ -272,12 +286,14 @@ div.skills
     margin-bottom: 5px
   h1
     margin-left: 10%
-    margin-top: 4%
+    margin-top: 1%
     margin-bottom: 2%
     font-size: 90px
-    font-family: 'Titillium Web', sans-serif
+    //font-family: 'Titillium Web', sans-serif
     line-height: 30px
-    border-bottom: solid 3px #cccccc
+    text-align: center
+    //border-bottom: solid 3px #cccccc
+    text-shadow: 0 1px 1px #fff
     height: 80px
     width: 80%
   div.progress
@@ -285,18 +301,25 @@ div.skills
     height: 7%
     margin-left: 10%
     margin-right: 7%
-    margin-bottom: 5%
+    margin-bottom: 4%
     background: #e5e5e5
     box-shadow: -1px 1px 5px 1px #cccccc
+    border:none
     border-radius: 5px
     div.progress-bar
       background: linear-gradient(to right, #7f7f7f 0%, #191919 100%)
       border-radius: 10px
       height: 100%
       z-index: 2
+      box-shadow: inset 0px 0px 32px 6px rgba(76,76,76,1)
       span.sr-only
         width: 50%
         font-size: 80px
+  .row2
+    width: 80%
+    margin-right: 10%
+    margin-left: 10%
+    margin-bottom: 2px
 div.portfolio
   margin-top: 7%
   margin-bottom: 5%
@@ -476,15 +499,15 @@ div.social
   position: relative
   top: 0
   right: 25px
-  font-size: 80px
+  font-size: 120px
   margin-left: 15%
   margin-bottom: 5%
   text-align: right
 
-.openBtn
+span.openBtn
   visibility: visible
   margin-left: 12%
-  margin-top: 5%
+  margin-top: 4%
 
 @media screen and (max-height: 450px)
   .sidenav

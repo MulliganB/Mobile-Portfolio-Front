@@ -12,6 +12,18 @@
   animation-name: slide;
 }
 
+.letterpress {
+  color: #2f4050;
+  font-family: Tahoma, Helvetica, Arial, sans-serif;
+  font-size: 70px;
+  text-align: left;
+  text-shadow: 0 1px 1px #fff;
+}
+
+.embossed {
+  font-family: 'Permanent Marker', cursive;
+}
+
 body {
   overflow-x: hidden;
   background-color: #191919;
@@ -59,14 +71,15 @@ div.logo {
   margin-top: 0;
   height: 1865px;
   width: 100%;
-  box-shadow: -5px 6px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px -2px 35px 0px #4c4c4c;
   background-color: #e5e5e5;
   color: #191919;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  font-family: 'Titillium Web', sans-serif;
   z-index: 1;
+  border-bottom-right-radius: 75px;
+  border-bottom-left-radius: 75px;
 }
 
 div.logo img {
@@ -85,14 +98,13 @@ div.logo div.text {
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 15%;
-  z-index: 2;
+  z-index: 1;
 }
 
 div.logo div.text H1 {
-  font-weight: bold;
   text-align: center;
   font-size: 80px;
-  line-height: 120px;
+  line-height: 140px;
 }
 
 div.logo div.text H2 {
@@ -100,6 +112,7 @@ div.logo div.text H2 {
   font-size: 60px;
   line-height: 80px;
   text-align: center;
+  font-family: 'Oswald', sans-serif;
 }
 
 .center {
@@ -294,11 +307,13 @@ div.education div.control div.year3 {
 div.skills {
   margin-top: 15%;
   padding-top: 7%;
-  height: 1800px;
+  height: 1870px;
   width: 100%;
   background: #e5e5e5;
+  border: solid 1px #191919;
+  border-radius: 75px;
+  box-shadow: inset 0px 0px 35px 0px #4c4c4c;
   color: #191919;
-  font-family: 'Titillium Web', sans-serif;
 }
 
 div.skills h4 {
@@ -311,12 +326,12 @@ div.skills h4 {
 
 div.skills h1 {
   margin-left: 10%;
-  margin-top: 4%;
+  margin-top: 1%;
   margin-bottom: 2%;
   font-size: 90px;
-  font-family: 'Titillium Web', sans-serif;
   line-height: 30px;
-  border-bottom: solid 3px #cccccc;
+  text-align: center;
+  text-shadow: 0 1px 1px #fff;
   height: 80px;
   width: 80%;
 }
@@ -326,7 +341,7 @@ div.skills div.progress {
   height: 7%;
   margin-left: 10%;
   margin-right: 7%;
-  margin-bottom: 5%;
+  margin-bottom: 4%;
   background: #e5e5e5;
   box-shadow: -1px 1px 5px 1px #cccccc;
   border-radius: 5px;
@@ -337,11 +352,19 @@ div.skills div.progress div.progress-bar {
   border-radius: 10px;
   height: 100%;
   z-index: 2;
+  box-shadow: inset 0px 0px 32px 6px #4c4c4c;
 }
 
 div.skills div.progress div.progress-bar span.sr-only {
   width: 50%;
   font-size: 80px;
+}
+
+div.skills .row2 {
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 2px;
 }
 
 div.portfolio {
@@ -618,16 +641,16 @@ div.social div.btns {
   position: relative;
   top: 0;
   right: 25px;
-  font-size: 80px;
+  font-size: 120px;
   margin-left: 15%;
   margin-bottom: 5%;
   text-align: right;
 }
 
-.openBtn {
+span.openBtn {
   visibility: visible;
   margin-left: 12%;
-  margin-top: 5%;
+  margin-top: 4%;
 }
 
 @media screen and (max-height: 450px) {

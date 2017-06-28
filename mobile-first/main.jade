@@ -4,6 +4,7 @@ html
   head
     link(href="./main.css", rel="stylesheet")
     link(href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Oswald|Permanent+Marker" rel="stylesheet")
     link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous")
     link( rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
     link(href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet")
@@ -17,16 +18,16 @@ html
         div.navsection#navSection
           img(src="./logo_noBack.png")
           div#mySidenav.sidenav
-            a(style="height: 5%" href="javascript:void(0)" onclick="closeNav()").closebtn &times;
+            a(style="height: 5%" href="javascript:void(0)" onclick="closeNav()").closebtn.letterpress &times;
             a(href="#") About
             a(href="#") Skills
             a(href="#") Education
             a(href="#") Work
             a(href="#") Contact
-          span(style="font-size:60px;cursor:pointer;margin-left:5%" onclick="openNav()")#open.openBtn &#9776;
+          span(style="font-size:100px;cursor:pointer;margin-left:3%;margin-top: 2%" onclick="openNav()")#open.openBtn.letterpress &#9776;
         div.text
-          H1 Web Designer | Front End Developer 
-          H2 Bridging the gap between logic and creativity 
+          H1.embossed Web Designer | Front End Developer 
+          H2.letterpress Bridging the gap between logic and creativity 
         span.glyphicon.glyphicon-envelope.center#contactBtn
       div.profile
         div.row
@@ -40,34 +41,36 @@ html
         div.row1
           hr.style18
       div.skills
-        h1 Skills
-        h4 HTML
+        h1.embossed Skills
+        div.row2
+          hr.style18
+        h4.letterpress.embossed HTML
         div.progress
           div.progress-bar#slide(role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;")
             span.sr-only 100% Complete
-        h4 Jade
-        div.progress
-          div.progress-bar#slide(role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;")
-            span.sr-only 100% Complete
-        h4 CSS
+        h4.letterpress.embossed Jade
         div.progress
           div.progress-bar#slide1(role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;")
             span.sr-only 100% Complete
-        h4 Sass
+        h4.letterpress.embossed CSS
         div.progress
           div.progress-bar#slide2(role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;")
             span.sr-only 100% Complete
-        h4 Javascript
+        h4.letterpress.embossed Sass
         div.progress
           div.progress-bar#slide3(role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;")
             span.sr-only 100% Complete
-        h4 Responsive Design
+        h4.letterpress.embossed Javascript
         div.progress
           div.progress-bar#slide4(role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;")
             span.sr-only 100% Complete
-        h4 SEO Practices 
+        h4.letterpress.embossed Responsive Design
         div.progress
           div.progress-bar#slide5(role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;")
+            span.sr-only 100% Complete
+        h4.letterpress.embossed SEO Practices 
+        div.progress
+          div.progress-bar#slide6(role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;")
             span.sr-only 100% Complete
       div.education
         h1 Education

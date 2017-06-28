@@ -21,7 +21,7 @@ $(document).ready(function(){
 		var imagePos = $(this).offset().top;
 
 		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+400) {
+			if (imagePos < topOfWindow+1300) {
 				$(this).addClass("slideUp");
 			}
 		});
@@ -41,7 +41,7 @@ $(document).ready(function(){
 		var imagePos = $(this).offset().top;
 
 		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+1375) {
+			if (imagePos < topOfWindow+1350) {
 				$(this).addClass("stretchRight");
 			}
 		});
@@ -61,7 +61,7 @@ $(document).ready(function(){
 		var imagePos = $(this).offset().top;
 
 		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+1325) {
+			if (imagePos < topOfWindow+1350) {
 				$(this).addClass("stretchRight");
 			}
 		});
@@ -71,7 +71,7 @@ $(document).ready(function(){
 		var imagePos = $(this).offset().top;
 
 		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+1300) {
+			if (imagePos < topOfWindow+1350) {
 				$(this).addClass("stretchRight");
 			}
 		});
@@ -81,7 +81,17 @@ $(document).ready(function(){
 		var imagePos = $(this).offset().top;
 
 		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+1275) {
+			if (imagePos < topOfWindow+1350) {
+				$(this).addClass("stretchRight");
+			}
+		});
+	});
+  $(window).scroll(function() {
+		$('#slide6').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+1350) {
 				$(this).addClass("stretchRight");
 			}
 		});
