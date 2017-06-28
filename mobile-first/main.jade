@@ -16,19 +16,19 @@ html
     div.bg
       div.logo
         div.navsection#navSection
-          img(src="./logo_noBack.png")
+          H1.logos.letterpress LOGO
           div#mySidenav.sidenav
-            a(style="height: 5%" href="javascript:void(0)" onclick="closeNav()").closebtn.letterpress &times;
-            a(href="#") About
-            a(href="#") Skills
-            a(href="#") Education
-            a(href="#") Work
-            a(href="#") Contact
+            a(style="height: 7%" href="javascript:void(0)" onclick="closeNav()").closebtn.letterpress &times;
+            a#about(href="#" onclick="moveToAbout()") About
+            a#skills(href="#" onclick="moveToSkills()") Skills
+            a#education(href="#" onclick="moveToEducation()") Education
+            a#work(href="#" onclick="moveToWork()") Work
+            a#contact(href="#" onclick="moveToContact()") Contact
           span(style="font-size:100px;cursor:pointer;margin-left:3%;margin-top: 2%" onclick="openNav()")#open.openBtn.letterpress &#9776;
         div.text
           H1.embossed Web Designer | Front End Developer 
           H2.letterpress Bridging the gap between logic and creativity 
-        span.glyphicon.glyphicon-envelope.center#contactBtn
+        span.glyphicon.glyphicon-envelope.center#contactBtn(role="button")
       div.profile
         div.container
           div.row
@@ -81,28 +81,28 @@ html
         div.control
           div.overview#overview
             h4 Overview
-            p Over the course of three years I learnt a a variety of concepts. I made a satnav system in Java, a management system in C++ and prototype for an agriculture maintenance system.
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus congue id ante eget aliquam. Fusce volutpat auctor sapien. Praesent volutpat lacus ut dictum fringilla. 
           div.year1#year1
             h4 Year 1 - Modules
-            p Algorithms and Data Structures 
-            p Fundamentals of Computer Architecture 
-            p Fundamentals of Programming 
-            p Introduction to Requirements and Systems Modelling 
-            p Mathematics for Computer Science 
+            p Module 1 
+            p Module 2
+            p Module 3
+            p Module 4
+            p Module 5 
           div.year2#year2
             h4 Year 2 - Modules
-            p Algorithms and Data Structures 2
-            p Database Systems for Software Applications 
-            p Fundamentals of Programming Languages
-            p Object-Orientated Programming for Computer Science 
-            p Software Engineering: Concepts and Methods
+            p Module 1
+            p Module 2
+            p Module 3
+            p Module 4
+            p Module 5
           div.year3#year3
             h4 Year 3 - Modules 
-            p Case Studies in Software Design
-            p Concurrent and Parallel Systems
-            p Effective C++ Programming
-            p Functional Programming
-            p Project - Example Work
+            p Module 1
+            p Module 2
+            p Module 3
+            p Module 4
+            p Module 5
       div.portfolio
         div.label
           h2 Have a look at 

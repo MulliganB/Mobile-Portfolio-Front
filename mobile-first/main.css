@@ -1,14 +1,16 @@
 @keyframes slide {
   from {
+    visibility: hidden;
     width: 0%;
   }
   to {
     width: 100%;
+    visibility: visible;
   }
 }
 
 .slide {
-  animation-duration: 3s;
+  animation-duration: 1.5s;
   animation-name: slide;
 }
 
@@ -76,24 +78,27 @@ div.logo {
   display: flex;
   flex-direction: column;
   z-index: 1;
+  span: active;
+  span-color: #666666;
 }
 
-div.logo img {
+div.logo H1.logos {
   display: block;
   margin-top: 4%;
   margin-left: 12%;
   margin-right: 20%;
   opacity: 0.6;
   max-width: 50%;
-  height: 25%;
+  height: 20%;
   border-radius: 15px;
+  font-size: 200px;
   z-index: 2;
 }
 
 div.logo div.text {
   margin-left: 5%;
   margin-right: 5%;
-  margin-top: 15%;
+  margin-top: 5%;
   z-index: 1;
 }
 
@@ -109,6 +114,10 @@ div.logo div.text H2 {
   line-height: 80px;
   text-align: center;
   font-family: 'Oswald', sans-serif;
+}
+
+div.logo span:hover {
+  color: #323232;
 }
 
 .center {
@@ -218,44 +227,44 @@ div.profile .container hr.style18:before {
 }
 
 div.education {
-  margin-top: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
-  height: 2000px;
-  width: 95%;
-  background: #191919;
+  height: 2200px;
+  width: 100%;
+  border-top-right-radius: 105px;
+  box-shadow: 8px -8px 20px 2px #7f7f7f;
+  background: linear-gradient(#323232, #7f7f7f);
   color: #e5e5e5;
-  opacity: 0.9;
+  border: none;
 }
 
 div.education h1 {
-  margin-left: 25px;
+  margin-left: 10%;
   padding-top: 4%;
   font-size: 90px;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Permanent Marker', cursive;
   border-bottom: solid 1px #cccccc;
   height: 140px;
   width: 80%;
 }
 
 div.education h3 {
-  margin-left: 25px;
+  margin-left: 10%;
   font-size: 60px;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 div.education h5 {
-  margin-left: 25px;
+  margin-left: 10%;
   font-size: 50px;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 2%;
 }
 
 div.education div.control {
   display: flex;
   flex-direction: column;
-  width: 90%;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 div.education div.control h4 {
@@ -264,6 +273,7 @@ div.education div.control h4 {
   border-bottom: solid 3px #cccccc;
   width: 92%;
   font-size: 50px;
+  font-family: 'Permanent Marker', cursive;
   line-height: 55px;
 }
 
@@ -271,15 +281,18 @@ div.education div.control p {
   margin-left: 1.75%;
   margin-right: 1.75%;
   font-size: 40px;
+  font-family: 'Oswald', sans-serif;
 }
 
 div.education div.control div.overview {
-  background: #e5e5e5;
-  height: 375px;
-  width: 95%;
-  border-radius: 5px;
+  visibility: hidden;
+  background: #ffffff;
+  height: 440px;
+  width: 100%;
+  border-radius: 25px;
   box-shadow: -5px 6px 6px 1px #000000;
   margin-bottom: 3%;
+  padding: 2%;
   color: #191919;
 }
 
@@ -289,43 +302,46 @@ div.education div.control div.overview p {
 }
 
 div.education div.control div.year1 {
-  background: #e5e5e5;
-  height: 395px;
-  width: 95%;
-  border-radius: 5px;
+  visibility: hidden;
+  background: #ffffff;
+  height: 440px;
+  width: 100%;
+  border-radius: 25px;
   box-shadow: -5px 6px 6px 1px #000000;
   margin-bottom: 3%;
+  padding: 2%;
   color: #191919;
 }
 
 div.education div.control div.year2 {
-  background: #e5e5e5;
-  height: 395px;
-  width: 95%;
-  border-radius: 5px;
+  visibility: hidden;
+  background: #ffffff;
+  height: 440px;
+  width: 100%;
+  border-radius: 25px;
   box-shadow: -5px 6px 6px 1px #000000;
   margin-bottom: 3%;
+  padding: 2%;
   color: #191919;
 }
 
 div.education div.control div.year3 {
-  background: #e5e5e5;
-  height: 480px;
-  width: 95%;
-  border-radius: 5px;
+  visibility: hidden;
+  background: #ffffff;
+  height: 440px;
+  width: 100%;
+  border-radius: 25px;
   box-shadow: -5px 6px 6px 1px #000000;
-  margin-bottom: 3%;
+  padding: 2%;
   color: #191919;
 }
 
 div.skills {
   margin-top: 15%;
   padding-top: 7%;
-  height: 1870px;
+  height: 1880px;
   width: 100%;
   background: #e5e5e5;
-  border-bottom-right-radius: 75px;
-  border-bottom-left-radius: 75px;
   color: #191919;
 }
 
@@ -381,12 +397,11 @@ div.skills .row2 {
 }
 
 div.portfolio {
-  margin-top: 7%;
-  margin-bottom: 5%;
-  margin-left: 10%;
+  margin-bottom: 2%;
+  margin-left: 0;
   height: 2250px;
-  width: 90%;
-  background: #191919;
+  width: 100%;
+  background: linear-gradient(#666666, #e5e5e5);
   color: #e5e5e5;
   display: flex;
   flex-direction: column;
@@ -395,8 +410,8 @@ div.portfolio {
 
 div.portfolio div.work {
   visibility: hidden;
-  margin-left: 2%;
-  margin-right: 6%;
+  margin-left: 10%;
+  margin-right: 10%;
   width: 80%;
   border-bottom: solid 3px #cccccc;
 }
@@ -407,17 +422,20 @@ div.portfolio div.work img {
   margin-bottom: 5%;
   width: 45%;
   height: 15%;
+  border-radius: 25px;
+  box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.75);
 }
 
 div.portfolio div.work img:hover {
   transform: scale(1.35);
+  box-shadow: 0px 0px 22px 0px black;
 }
 
 div.portfolio div.label {
   margin-top: 2.5%;
   margin-bottom: 4%;
-  margin-left: 2%;
-  margin-right: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
   height: 250px;
   width: 80%;
   word-wrap: break-word;
@@ -429,26 +447,20 @@ div.portfolio div.label {
 
 div.portfolio div.label h1 {
   font-size: 80px;
-  font-family: 'Titillium Web', sans-serif;
-  line-height: 10px;
-  margin-bottom: 2%;
+  font-family: 'Permanent Marker', cursive;
+  line-height: 25px;
+  margin-bottom: 3%;
+  margin-top: 5%;
 }
 
 div.portfolio div.label h2 {
   font-size: 80px;
-  font-family: 'Titillium Web', sans-serif;
-}
-
-div.portfolio div.label p {
-  font-size: 48px;
-  font-family: 'Titillium Web', sans-serif;
-  line-height: 120px;
-  margin-top: 5%;
+  font-family: 'Permanent Marker', cursive;
 }
 
 div.contact {
   margin-top: 2%;
-  height: 1600px;
+  height: 1650px;
   width: 100%;
   background: #e5e5e5;
   color: #191919;
@@ -462,7 +474,6 @@ div.contact div.call {
   border-bottom: solid 5px #cccccc;
   margin-left: 5%;
   margin-right: 5%;
-  margin-top: 5%;
   padding-bottom: 5%;
   line-height: 100px;
 }
@@ -496,7 +507,6 @@ div.contact div.form div.name {
 div.contact div.form div.name input {
   float: left;
   margin-top: 2%;
-  margin-bottom: 5%;
   padding-top: 2.5px;
   padding-bottom: 2.5px;
   text-indent: 7px;
@@ -505,6 +515,7 @@ div.contact div.form div.name input {
   resize: none;
   box-shadow: -4px 6px 5px 0px #cccccc;
   font-family: 'Oswald', sans-serif;
+  margin-bottom: 5%;
 }
 
 div.contact div.form div.name input.first {
@@ -526,7 +537,6 @@ div.contact div.form div.message {
 div.contact div.form div.message textarea {
   float: left;
   margin-top: 2%;
-  margin-bottom: 5%;
   padding-top: 2.5px;
   padding-bottom: 2.5px;
   text-indent: 7px;
@@ -535,6 +545,7 @@ div.contact div.form div.message textarea {
   resize: none;
   box-shadow: -4px 6px 5px 0px #cccccc;
   font-family: 'Oswald', sans-serif;
+  margin-bottom: 5%;
   height: 250%;
   width: 90%;
 }
@@ -548,7 +559,6 @@ div.contact div.form div.subject {
 div.contact div.form div.subject input {
   float: left;
   margin-top: 2%;
-  margin-bottom: 5%;
   padding-top: 2.5px;
   padding-bottom: 2.5px;
   text-indent: 7px;
@@ -557,12 +567,13 @@ div.contact div.form div.subject input {
   resize: none;
   box-shadow: -4px 6px 5px 0px #cccccc;
   font-family: 'Oswald', sans-serif;
+  margin-bottom: 5%;
   height: 50%;
   width: 90%;
 }
 
 div.contact div.form div.action {
-  margin-top: 70px;
+  margin-top: 60px;
   width: 90%;
   font-family: 'Oswald', sans-serif;
 }
@@ -570,6 +581,7 @@ div.contact div.form div.action {
 div.contact div.form div.action input {
   width: 100%;
   height: 9%;
+  margin-bottom: 4%;
   font-size: 50px;
   border-radius: 5px;
   background: #191919;
@@ -587,21 +599,20 @@ div.social {
   padding-top: 1%;
   font-family: 'Permanent Marker', cursive;
   text-align: center;
-  background: linear-gradient(#191919, #7f7f7f, #666666);
-  color: #e5e5e5;
+  background: #4c4c4c;
 }
 
 div.social i {
   margin-right: 5%;
-  color: #4c4c4c;
-}
-
-div.social i:hover {
   color: #666666;
 }
 
+div.social i:hover {
+  color: #999999;
+}
+
 div.social i:active {
-  color: #7f7f7f;
+  color: #cccccc;
 }
 
 div.social div.socialCall {
@@ -611,11 +622,13 @@ div.social div.socialCall {
 
 div.social div.socialCall H1 {
   font-size: 65px;
+  color: #999999;
 }
 
 div.social div.socialCall H2 {
   font-size: 45px;
   font-family: 'Oswald', sans-serif;
+  color: #999999;
 }
 
 div.social div.btns {
@@ -633,6 +646,7 @@ div.social div.btns {
   top: 0;
   left: 0;
   background-color: #191919;
+  color: #e5e5e5;
   overflow-x: hidden;
   padding-top: 30px;
 }
@@ -640,7 +654,7 @@ div.social div.btns {
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  color: #818181;
+  color: #e5e5e5;
   display: flex;
   flex-direction: column;
   font-size: 60px;
@@ -650,6 +664,10 @@ div.social div.btns {
   margin-right: 10%;
   margin-left: 10%;
   z-index: 3;
+}
+
+.sidenav a .sidenav a:first-child {
+  margin-bottom: 5%;
 }
 
 .sidenav a:hover, .offcanvas a:focus {
