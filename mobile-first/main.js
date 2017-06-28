@@ -18,23 +18,38 @@ function closeNav() {
 
 function moveToAbout() {
   closeNav();
-  window.scrollTo(0, 4500);
+  $('body, html').animate({
+    scrollTop: $('profile').offset.top
+  }, '500');
 }
 function moveToSkills() {
   closeNav();
-  window.scrollTo(0, 4500);
+  $('body, html').animate({
+    scrollTop: $('skills').offset.top
+  }, '500');
 }
 function moveToEducation() {
   closeNav();
-  window.scrollTo(0, 4500);
+  $('body, html').animate({
+    scrollTop: $('education').offset.top
+  }, '500');
 }
 function moveToWork() {
   closeNav();
-  window.scrollTo(0, 4500);
+  $('body, html').animate({
+    scrollTop: $('portfolio').offset.top
+  }, '500');
 }
 function moveToContact() {
   closeNav();
-  window.scrollTo(0, 4500);
+  $('body, html').animate({
+    scrollTop: $('contact').offset.top
+  }, '500');
+}
+function moveToContact1() {
+  $('body, html').animate({
+    scrollTop: $('contact').offset.top
+  }, '500');
 }
 
 $(document).ready(function(){
