@@ -50,9 +50,10 @@ div.navsection
   padding-bottom: 2.5px
   text-indent: 7px
   border: none
-  border-radius: 5px
+  border-radius: 15px
   resize: none
   box-shadow: -4px 6px 5px 0px rgba(204,204,204,1)
+  font-family: 'Oswald', sans-serif
 
 @mixin fullInput
   float: right
@@ -111,7 +112,7 @@ div.logo
       font-size: 80px
       line-height: 140px
     H2
-      margin-top: 15%
+      margin-top: 10%
       font-size: 60px
       line-height: 80px
       text-align: center
@@ -123,71 +124,84 @@ div.logo
   font-size: 200px
   z-index: 2
 div.profile
-  margin-top: 1%
-  padding-top: 2.5%
-  padding-bottom: 2.5%
+  padding-top: 5%
+  padding-bottom: 5%
   width: 100%
-  height: 1890px
-  background: #191919
+  height: 2000px
+  background: linear-gradient(#191919, #e5e5e5, #191919)
   color: #e5e5e5
-  opacity: 0.8
-  h1
-    margin-top: 5%
-    margin-bottom: 10%
-    margin-left: 7%
-    margin-right: 7%
-    font-size: 130px
-    font-family: 'Titillium Web', sans-serif
-    line-height: 150px
-    border-bottom: solid 1px #cccccc
-    height: 350px
-    width: 86%
-    text-align: center
-  h4
-    margin-left: 10%
-    font-size: 130px
-    font-family: 'Titillium Web', sans-serif
-    line-height: 125px
+  opacity: 0.9
+  .container
+    background: #191919
+    border-radius: 45px
+    box-shadow: 0px 0px 35px 0px rgba(76,76,76,1)
     width: 80%
-    text-align: center
-  h5
-    margin-left: 10%
-    margin-right: 10%
-    margin-top: 4%
-    font-size: 60px
-    font-family: 'Titillium Web', sans-serif
-    line-height: 125px
-    width: 80%
-    text-align: center
-  p
-    margin-top: 7%
-    margin-left: 2%
-    margin-right: 2%
-    text-align: center
-    font-size: 50px
-    line-height: 90px
-  hr
-    width: 60%
-    margin-left: 20%
-    margin-right: 20%
-    margin-top: 10%
+    img
+      height: 250px
+      width: 250px
+      display: block
+      margin: 0 auto
+    h1
+      margin-top: 5%
+      margin-bottom: 4%
+      margin-left: 7%
+      margin-right: 7%
+      font-size: 130px
+      font-family: 'Permanent Marker', sans-serif
+      line-height: 150px
+      border-bottom: solid 1px #4c4c4c
+      height: 200px
+      width: 86%
+      text-align: center
+    h4
+      margin-left: 10%
+      font-size: 130px
+      font-family: 'Oswald', sans-serif
+      line-height: 125px
+      width: 80%
+      text-align: center
+    h5
+      margin-left: 10%
+      margin-right: 10%
+      margin-top: 2%
+      font-size: 60px
+      font-family: 'Oswald', sans-serif
+      line-height: 125px
+      width: 80%
+      text-align: center
+    p
+      margin-top: 4%
+      margin-left: 2%
+      margin-right: 2%
+      text-align: center
+      font-size: 50px
+      line-height: 100px
+      font-family: 'Permanent Marker', sans-serif
+    hr.style1
+      width: 60%
+      margin-left: 20%
+      margin-right: 20%
+      margin-top: 10%
+      background-color: #191919
 
-hr.style18
-  height: 30px
-  border-style: solid
-  border-color: #8c8b8b
-  border-width: 1px 0 0 0
-  border-radius: 20px
+    hr.style18
+      height: 30px
+      width: 60%
+      margin-top: 5%
+      border-style: solid
+      border-color: #8c8b8b
+      border-width: 1px 0 0 0
+      border-radius: 20px
 
-hr.style18:before
-  display: block
-  content: ""
-  height: 30px
-  margin-top: -31px
-  border-style: solid
-  border-color: #8c8b8b
-  border-width: 0 0 3px 0
-  border-radius: 20px
+    hr.style18:before
+      display: block
+      content: ""
+      height: 30px
+      margin-top: -31px
+      border-style: solid
+      border-color: #8c8b8b
+      border-width: 0 0 3px 0
+      border-radius: 20px
 
 div.education
   margin-top: 5%
@@ -378,12 +392,13 @@ div.contact
   background: #e5e5e5
   color: #191919
   box-shadow: -1px 1px 5px 1px rgba(76,76,76,1)
+  border-top-right-radius: 45px
+  border-top-left-radius: 45px
   display: flex
   flex-direction: column
-  opacity: 0.7
   div.call
     width: 90%
-    height: 300px
+    height: 360px
     border-bottom: solid 5px #cccccc
     margin-left: 5%
     margin-right: 5%
@@ -392,15 +407,15 @@ div.contact
     line-height: 100px
     h1
       margin-left: 2%
-      font-size: 120px
-      font-family: 'Titillium Web', sans-serif
+      font-size: 100px
+      font-family: 'Permanent Marker', cursive
     p
       margin-left: 2%
       font-size: 80px
-      font-family: 'Titillium Web', sans-serif
+      font-family: 'Oswald', sans-serif
   div.form
     width: 100%
-    height: 2500px
+    height: 100%
     margin-left: 5%
     margin-right: 2.5%
     margin-top: 15px
@@ -432,6 +447,7 @@ div.contact
     div.action
       margin-top: 70px
       width: 90%
+      font-family: 'Oswald', sans-serif
       input
         width: 100%
         height: 9%
@@ -443,10 +459,12 @@ div.contact
       input:hover
         background: #323232
 div.social
-  margin-top: 5%
   height: 300px
-  font-family: 'Titillium Web', sans-serif
+  margin-top: 0
+  padding-top: 1%
+  font-family: 'Permanent Marker', cursive
   text-align: center
+  background: linear-gradient(#191919, #7f7f7f, #666666)
   i
     margin-right: 5%
     color: #4c4c4c
@@ -458,9 +476,10 @@ div.social
     margin-left: 4%
     margin-right: 4%
     H1
-      font-size: 80px
+      font-size: 65px
     H2
       font-size: 45px
+      font-family: 'Oswald', sans-serif
   div.btns
     margin-left: 3%
     margin-top: 3%
